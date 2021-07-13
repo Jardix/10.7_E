@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>10.7 Exercises</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="content">
+			<h1 class="title">Maps and Sets Exercise</h1>
+			<h2 class="questionNumber">Quick Question #1</h2>
+			<div>
+				<p class="questionText">What does the following code return?</p>
+				<br />
+				<p>new Set([1, 1, 2, 2, 3, 4])</p>
+				<br />
+				<p class="submit">Submitted:</p>
+				<br />
+				<p class="submit">[1, 2, 3, 4]</p>
+				<br />
+				<p class="correct">Correct Answer:</p>
+				<br />
+				<img src="QuickQuestion1.PNG" alt="{1,2,3,4}" />
+				<p class="correct">
+					I said it would be an array, it returned an object/set.
+				</p>
+				<br />
+			</div>
+			<h2 class="questionNumber">Quick Question #2</h2>
+			<div>
+				<p class="questionText">What does the following code return?</p>
+				<br />
+				<p>[...new Set("referee")].join("")</p>
+				<br />
+				<p class="submit">Submitted:</p>
+				<br />
+				<p class="submit">referee</p>
+				<br />
+				<p class="correct">Correct Answer:</p>
+				<br />
+				<img src="QQ2.PNG" alt="`ref`" />
+				<p class="correct">
+					I assume this is because it filtered out the duplicates? Not totally
+					sure on this one.
+				</p>
+				<br />
+			</div>
+			<h2 class="questionNumber">Quick Question #3</h2>
+			<div>
+				<p class="questionText">
+					What does the Map <i>m</i> look like after running the following code?
+				</p>
+				<br />
+				<p>
+					let m = new Map(); <br />
+					m.set([1,2,3], true); <br />
+					m.set([1,2,3], false);
+				</p>
+				<br />
+				<p class="submit">Submitted:</p>
+				<br />
+				<p class="submit">[1 :false, 2 : false, 3 : false]</p>
+				<br />
+				<p class="correct">Correct Answer:</p>
+				<br />
+				<img
+					src="QQ3.PNG"
+					alt="0: {Array(3) => true}
+            1: {Array(3) => false}"
+				/>
+				<p class="correct">
+					No excuse here; wasn't paying enough attention to the format of how
+					Maps are returned.
+				</p>
+				<br />
+			</div>
+			<h2 class="questionNumber">hasDuplicate</h2>
+			<div>
+				<p class="questionText">
+					Write a function called hasDuplicate which accepts an array and
+					returns true or false if that array contains a duplicate.
+				</p>
+				<br />
+				<p class="submit">
+					Submitted:
+				</p>
+				<br />
+				<img src="myHasDuplicate.PNG" alt="(Please see app.js)" />
+				<p class="correct">Correct Answer:</p>
+				<br />
+				<img src="hasDuplicate.PNG" alt="(Please see app.js)" />
+			</div>
+			<h2 class="questionNumber">vowelCount</h2>
+			<p class="questionText">
+				Write a function called vowelCount which accepts a string and returns a
+				map where the keys are numbers and the values are the count of the
+				vowels in the string.
+			</p>
+			<br />
+			<br />
+			<p>vowelCount('awesome') // Map { 'a' => 1, 'e' => 2, 'o' => 1 }</p>
+			<br />
+			<p>vowelCount('Colt') // Map { 'o' => 1 }</p>
+			<br />
+			<p class="submit">Submitted:</p>
+			<br />
+			<p>
+				<img src="myVowelCount.PNG" alt="(Please see app.js)" />
+			</p>
+			<br />
+			<p class="correct">Correct Answer:</p>
+			<br />
+			<img src="vowelCount.PNG" alt="(Please see app.js)" />
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
